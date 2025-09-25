@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+:root{
+    --main-color: #007fff;
+    --black-color: #002757;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+
+/*! base html codes */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color:white
+}
+
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: var(--black-color);
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+section{
+    padding: 3.5rem 7%;
+}
+
+a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    
+}
+
+.heading{
+    color: var(--black-color);
+    text-transform:capitalize ;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid var(--black-color);
+
+}
+
+.heading span{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.search-input{
+    font-size: 1.6rem;
+    color:var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+
+}
+
+
+/*! headeer start */
+.header .logo img{
+        height: 5rem; 
+    }
+.header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 10rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    
+}
+
+
+
+.header .navbar a{
+    margin: 0.1rem;
+    font-size: 1.6rem;
+    color : var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color: var (--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+#menu-btn{
+    display: none;
+}
+.navbar .active{
+    right: 0;
+}
+/*! header end  */
+
+/*! home start  */
+.home{
+    min-height: 100vh;
+    background: url("../images/Anzaf rezidans/DJI_0855-1170x785.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+}
+
+.home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+
+}
+
+.home .content h3 {
+    font-size: 3.5rem;
+    color: black
+}
+.home .content p{
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+
+}
+/*! home end */
+
+/*! proje section start */
+
+.proje .box{
+    width: 20rem;
+    margin: 0rem;
+    text-align: center;
+}
+.proje .box-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+
+}
+
+.proje .box-container .box {
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    min-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.proje .box-container .box img {
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.proje .box-container .box .BİTEN-PROJELER {
+    font-size: 1.2rem;
+}
+
+
+/*! proje section end */
+
+/*! devam eden projelerimiz start */
+.devam .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.devam .box-container .box{
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    border-radius: 3rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+
+}
+
+.devam .box-container .box .box-head{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+}
+
+.devam .box-container .box .box-head .title{
+   font-size: 1.4rem;
+
+}
+
+.devam .box-container .box .box-head .title .name{
+   font-size: 4rem;
+   font-weight: bold;
+   text-align: start;
+   overflow-wrap: anywhere
+}
+
+.devam .box-container .box img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+     
+}
+
+.devam .box-container .box-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.devam .box-container .box-bottom .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*! devam eden projelerimiz end */
+/*! hakkımızda start */
+.hakkimizda .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.hakkimizda .row .image {
+    flex: 1 1 5rem;
+    
+}
+
+.hakkimizda .row img {
+    max-width: 100%;
+    height: auto;
+    
+}
+.hakkimizda .row .content {
+    flex: 1 1 5rem;
+}
+.hakkimizda .row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+.hakkimizda .row .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+/*! hakkımızda end */
+/*! contact start */
+
+.contact .row{
+    display: flex;
+    background-color: var(--black-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact .row .map{
+    flex: 1 1 40rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 40rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+.contact .row form h3{
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+.contact .row form .inputBox{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    border: var(--border);
+}
+.contact .row form .inputBox i{
+    font-size: 2rem;
+    color: #fff;
+    padding-left: 2rem;
+}
+.contact .row form .inputBox input{
+    padding: 2rem;
+    color: #fff;
+    width: 100%;
+    font-size: 1.6rem;
+    background: none;
+    text-transform: none;
+}
+.contact .row form .btn{
+    color: var(--main-color);
+    background-color: #fff;
+    font-weight: bold;
+}
+
+/*! contact end */
+/*! footer start */
+.footer{
+    background-color: var(--black-color);
+    text-align: center;
+}
+.footer .search{
+    display: flex;
+    justify-content: center;
+}
+.footer .search .search-input{
+    width: 30rem;
+}
+.footer .search .btn-primary{
+    padding: 1rem 2rem;
+    background-color: var(--main-color);
+    margin-left: 1rem;
+}
+.footer .share{
+    padding: 2rem 0;
+
+}
+.footer .share a{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    border: var(--border);
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.footer .links a{
+    background-color: var(--main-color);
+    padding: 0.7rem 2rem;
+    color: #fff;
+    font-size: 2rem;
+    border: var(--border);
+}
+.footer .links a:hover{
+    background-color: var(--black-color);
+    opacity: 0.7;
+}   
+
+.footer .links a.active{
+    background-color: var(--black-color);
+}
+/*! footer end */
+/*! responsive strt */ 
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+.header{
+    padding: 1.5rem 2rem;
+}  
+
+.header .logo img{
+    height: 7rem;
+}
+
+section{
+    padding: 2rem;
+}
+.proje .box-container .box .box-head .name{
+    font-size: 3.4rem;
+}
+}
+@media (max-width: 768px){
+     #menu-btn{
+        display: inline-block;
+    }
+
+.header .navbar{
+    position: absolute;
+    top: 95%;
+    background-color: #fff;
+    height: calc(100vh - 9rem);
+    width: 30rem;
+    box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+    right: -100%;
+}
+.header .navbar .active{
+    right: 3rem;
+}
+
+
+.header .navbar a{
+    color: #fff;
+    display: block;
+    margin:  1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+}
+@media (max-width: 576px){
+    html{
+        font-size: 50%;
+    }
+}
+/*! responsive end */
